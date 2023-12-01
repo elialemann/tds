@@ -16,7 +16,420 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.1.2",
-        "cells": [],
+        "cells": [
+          {
+            "position": {
+              "x": 440,
+              "y": 80
+            },
+            "size": {
+              "width": 540,
+              "height": 520
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "The Organisation"
+              }
+            },
+            "id": "82e3295a-64e0-4418-b469-cc3159752ba8",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "The Organisation",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 220,
+              "y": 150
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "user / browser"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "bb6a4c24-58b1-4abb-b4f0-78b982debccf",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "user / browser",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": true,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 530,
+              "y": 100
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "app1 web front"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "9921fdc1-05fb-4efc-aa42-18dd468e9650",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "app1 web front",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 790,
+              "y": 140
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "DMZ MSSQL"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "3250f3af-e3c2-4cc9-86c8-3c9426c73081",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Store",
+              "name": "DMZ MSSQL",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "5b6c4133-9396-4388-987e-aef68f51f89a",
+            "source": {
+              "cell": "82e3295a-64e0-4418-b469-cc3159752ba8"
+            },
+            "target": {
+              "cell": "82e3295a-64e0-4418-b469-cc3159752ba8"
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "DMZ front end",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "386fdba2-3e8b-4922-9a3c-12c6855176b2",
+            "source": {
+              "x": 390,
+              "y": 370
+            },
+            "target": {
+              "x": 900,
+              "y": 20
+            },
+            "labels": [
+              "DMZ front end"
+            ],
+            "vertices": [
+              {
+                "x": 590,
+                "y": 270
+              },
+              {
+                "x": 660,
+                "y": 220
+              },
+              {
+                "x": 880,
+                "y": 20
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "DMZ - intranet boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "fe2c73be-2d34-4b53-9405-41a7bf6a2009",
+            "source": {
+              "x": 1020,
+              "y": 170
+            },
+            "target": {
+              "x": 420,
+              "y": 380
+            },
+            "vertices": [
+              {
+                "x": 1000,
+                "y": 270
+              },
+              {
+                "x": 800,
+                "y": 320
+              }
+            ],
+            "labels": [
+              "DMZ - intranet boundary"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "app1 sql conn",
+              "description": "app1 sql connection",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "ms-sql",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "88cccd4d-79db-4b54-88aa-df7d96a006e4",
+            "source": {
+              "cell": "9921fdc1-05fb-4efc-aa42-18dd468e9650"
+            },
+            "target": {
+              "cell": "3250f3af-e3c2-4cc9-86c8-3c9426c73081"
+            },
+            "labels": [
+              "app1 sql conn"
+            ],
+            "vertices": [
+              {
+                "x": 750,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "app1 user conn",
+              "description": "app1 user connections via tcp443",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "https",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "a7671617-dce8-43a7-a208-c9e05e714dcb",
+            "source": {
+              "cell": "bb6a4c24-58b1-4abb-b4f0-78b982debccf"
+            },
+            "target": {
+              "cell": "9921fdc1-05fb-4efc-aa42-18dd468e9650"
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": 160
+              },
+              {
+                "x": 490,
+                "y": 133
+              }
+            ],
+            "labels": [
+              "app1 user conn"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "app2 user conn",
+              "description": "app2 user connection via tcp443",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "https",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "efd321da-4dbf-4ccf-a840-40d8ed90dace",
+            "source": {
+              "cell": "bb6a4c24-58b1-4abb-b4f0-78b982debccf"
+            },
+            "target": {
+              "cell": "7fd10673-58ae-4728-8915-572157c253a3"
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": 213
+              }
+            ],
+            "labels": [
+              "app2 user conn"
+            ]
+          },
+          {
+            "position": {
+              "x": 490,
+              "y": 180
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "app2 web front"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "7fd10673-58ae-4728-8915-572157c253a3",
+            "data": {
+              "type": "tm.Process",
+              "name": "app2 web front",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "zIndex": 11
+          }
+        ],
         "description": "Threat modeling that makes sense"
       }
     ],
