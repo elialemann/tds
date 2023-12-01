@@ -1,0 +1,27 @@
+{
+  "version": "2.1.2",
+  "summary": {
+    "title": "STRIDEThreatModel",
+    "owner": "",
+    "description": "Template for Threat Modeling",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "ThreatModel",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.1.2",
+        "cells": [],
+        "description": "Threat modeling that makes sense"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
